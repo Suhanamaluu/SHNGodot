@@ -1,0 +1,63 @@
+[gd_scene load_steps=8 format=3 uid="uid://dwne8n2lr1hrj"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_24rml"]
+[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_gp44e"]
+[ext_resource type="PackedScene" uid="uid://b54jeo0t68its" path="res://gun.tscn" id="3_0jd56"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_exvl3"]
+radius = 25.02
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qo7vv"]
+radius = 38.0132
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xcgtg"]
+bg_color = Color(0.18359, 0.18359, 0.18359, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s12kj"]
+bg_color = Color(2.69532e-06, 0.854223, 0.238286, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(-6, 20)
+script = ExtResource("1_24rml")
+
+[node name="HappyBoo" parent="." instance=ExtResource("1_gp44e")]
+unique_name_in_owner = true
+position = Vector2(6, -20)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, -20)
+shape = SubResource("CircleShape2D_exvl3")
+
+[node name="Gun" parent="." instance=ExtResource("3_0jd56")]
+position = Vector2(6, -22)
+
+[node name="HurtBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(6, -20)
+shape = SubResource("CircleShape2D_qo7vv")
+debug_color = Color(0.830217, 0.382458, 0.250773, 0.42)
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -104.0
+offset_top = -160.0
+offset_right = 130.0
+offset_bottom = -133.0
+theme_override_styles/background = SubResource("StyleBoxFlat_xcgtg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_s12kj")
+value = 100.0
+show_percentage = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
