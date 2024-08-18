@@ -11,12 +11,13 @@ This project is a simple 2D survival action game where the player controls a cha
 2. [Safa Fathima](https://github.com/SAFA-010)
 3. [Nandana A Nair](https://github.com/Nandanaanairr)
 ## Link to product walkthrough
-[link to video](Link Here)
+[](Link Here)
 ## How it Works ?
 1. Explaining the working of project
    In this game, the player controls a character that runs around the screen, automatically shooting at waves of approaching enemies (mobs). The goal is to survive as long as possible by dodging enemies and staying 
    on the move, while the character's shooting clears the path ahead. The gameplay is simple, focusing on continuous movement and automatic shooting to defeat as many mobs as possible.
 2. Embed video of project demo
+                  https://github.com/user-attachments/assets/f36f2600-e71c-4cee-8ec5-77144b698ce0
 ## Libraries used
 Godot Engine: Version 4.3 (or latest stable version)
 ## How to configure
