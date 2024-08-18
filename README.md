@@ -10,6 +10,7 @@ This project is a simple 2D survival action game where the player controls a cha
 1. [Hritik Krishna](https://github.com/hrit-tik)
 2. [Safa Fathima](https://github.com/SAFA-010)
 3. [Nandana A Nair](https://github.com/Nandanaanairr)
+4. [Suhana.S.R](https://github.com/Suhanamaluu)
 ## Link to product walkthrough
 [](Link Here)
 ## How it Works ?
