@@ -4,8 +4,8 @@
 
 
 
-# Project Name
-Long Description about project. This project do that. This project is awesome...
+# Mobshoot Mania
+This project is a simple 2D survival action game where the player controls a character that must survive against endless waves of enemies (mobs). The character automatically shoots at the approaching mobs while the player focuses on moving and dodging to stay alive. The game is designed with basic controls, allowing the character to move freely across the screen while continuously firing at the enemies. The goal is to survive for as long as possible, racking up a high score by defeating as many mobs as you can before being overwhelmed. The game is built using a game engine like Godot, making it easy to configure, run, and export to different platforms. The project is suitable for beginners looking to learn game development fundamentals or for anyone interested in creating a simple yet engaging survival game.
 ## Team members
 1. [Hritik Krishna](https://github.com/hrit-tik)
 2. [Safa Fathima](https://github.com/SAFA-010)
